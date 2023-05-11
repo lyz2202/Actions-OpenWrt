@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############改名字##############
-name: Redmi-AX6000-OpenWrt
+name: xdr6086-OpenWrt
 
 on:
   repository_dispatch:
@@ -30,7 +30,7 @@ env:
   DIY_P2_SH: OpenWrt/Redmi-AX6000/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
   ###############改名字##############
   OPENWRT_NAME: openwrt
