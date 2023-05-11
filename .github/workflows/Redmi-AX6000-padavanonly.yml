@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############改名字##############
-name: Redmi-AX6000-padavanonly
+name: xdr6086-immortalwrtARM
 
 on:
   repository_dispatch:
@@ -23,17 +23,17 @@ on:
 
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrtARM
-  REPO_BRANCH: mt7986
+  REPO_BRANCH: mt7986-dual-2.5G
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: padavanonly/Redmi-AX6000/.config
   DIY_P1_SH: padavanonly/Redmi-AX6000/diy-part1.sh
   DIY_P2_SH: padavanonly/Redmi-AX6000/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
   ###############改名字##############
-  OPENWRT_NAME: padavanonly
+  OPENWRT_NAME: immortalwrtARM
 
 jobs:
   build:
